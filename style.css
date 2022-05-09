@@ -175,6 +175,30 @@ body {
 
 .projects .card{
     border-left: 6px solid rosybrown;
+    padding: 15px 10px;
+
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+}
+
+.projects h4{
+    margin: 0;
+    font-size: 1rem;
+}
+
+.projects p{
+    margin: 5px 0;
+    font-size: .8rem;
+    color: darkgray;
+}
+
+.project-actions{
+    align-self: end;
+    justify-self: end;
+}
+
+.project-actions i{
+    margin: 0 10px;
 }
 
 .announcements{
@@ -186,6 +210,33 @@ body {
     gap: 10px;
 }
 
+.announcements .card{
+    padding: 15px 20px;
+
+    display: grid;
+    align-items: center;
+}
+
+.announcements h5{
+    font-size: .8rem;
+    margin: 0 0 3px 0;
+}
+
+.announcements p{
+    margin: 0;
+    font-size: .7rem;
+    color: darkgray;
+}
+
+.announcement-item{
+    padding: 10px 5px;
+    border-top: 1px solid rgb(213, 213, 213);
+}
+
+.announcement-item:first-child{
+    border: none;
+}
+
 .trending{
     grid-column: 2;
     grid-row: 2;
@@ -193,4 +244,65 @@ body {
     display: grid;
     grid-template-rows: auto 1fr;
     gap: 10px;
+}
+
+.trending .card{
+    padding: 20px;
+
+    display: grid;
+    align-items: center;
+}
+
+.trending-item{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 15px;
+    align-items: center;
+}
+
+.trending-item p{
+    margin: 0;
+    font-size: .8rem;
+}
+
+.trend-photo{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trend-photo img{
+    width: 60%;
+    height: 60%;
+}
+
+.trend-project{
+    color: darkgray;
+    padding: 2px 0;
+}
+
+.trending-item:nth-child(1) .trend-photo{
+    background-color:rgb(197, 235, 235);
+
+}
+
+.trending-item:nth-child(2) .trend-photo{
+    background-color: thistle;
+}
+
+.trending-item:nth-child(2) img{
+    width: 85%;
+    height: 85%;
+}
+
+.trending-item:nth-child(3) .trend-photo{
+    background-color: gray;
+}
+
+.trending-item:nth-child(4) .trend-photo{
+    background-color: rgb(255, 158, 148);
 }
